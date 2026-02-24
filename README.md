@@ -231,7 +231,7 @@ If you find our work to be useful, consider citing us:
 
 ```bibtex
 @article{e-spl,
-  title         = {Unifying Evolutionary Prompt Search and Reinforcement Learning for LLM Self-Improvement},
+  title={Unifying Evolutionary Prompt Search and Reinforcement Learning for LLM Self-Improvement},
   author={Zhang, Lunjun and Chen, Ryan and Stadie, Bradly C},
   journal={arXiv preprint arXiv:2602.14697},
   year={2026}
