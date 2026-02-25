@@ -1,6 +1,5 @@
 <h2 align="center">
-Unifying Evolutionary Prompt Search and Reinforcement Learning<br/>
-for LLM Self-Improvement
+Evolutionary System Prompt Learning for Reinforcement Learning in LLMs
 </h2>
 
 <p align="center">
@@ -233,7 +232,7 @@ If you find our work to be useful, consider citing us:
 
 ```bibtex
 @article{e-spl,
-  title={Unifying Evolutionary Prompt Search and Reinforcement Learning for LLM Self-Improvement},
+  title={Evolutionary System Prompt Learning for Reinforcement Learning in LLMs},
   author={Zhang, Lunjun and Chen, Ryan and Stadie, Bradly C},
   journal={arXiv preprint arXiv:2602.14697},
   year={2026}
