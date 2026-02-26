@@ -8,7 +8,7 @@ Lunjun Zhang, Ryan Chen, Bradly C. Stadie
 
 🔗 arXiv: https://arxiv.org/abs/2602.14697
 
-💡 website: https://sites.google.com/view/system-prompt-learning/home
+💡 website: https://sites.google.com/view/system-prompt-learning/
 
 ## TL;DR
 
