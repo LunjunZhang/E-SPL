@@ -613,6 +613,7 @@ class PrincipleUpdater:
                 all_rollouts.append(rollouts)
 
         sample_futures_list = []
+        rollouts_per_problem_list = []
         for rollouts_per_problem in all_rollouts:
             problem = rollouts_per_problem[0]["problem"]
             answer = rollouts_per_problem[0]["groundtruth"]
@@ -636,9 +637,12 @@ class PrincipleUpdater:
             sample_futures_list.append(
                 get_sample_future(conversation, self.renderer, self.sampling_client, self.sampling_params)
             )
+            # IMPORTANT: keep a 1:1 mapping between each Future and its corresponding rollouts.
+            # Otherwise, referencing `rollouts_per_problem` later would accidentally reuse the last loop value.
+            rollouts_per_problem_list.append(rollouts_per_problem)
 
         results = []
-        for sample_future in sample_futures_list:
+        for rollouts_per_problem, sample_future in zip(rollouts_per_problem_list, sample_futures_list):
             raw_response = get_text_from_sampled_future(sample_future, self.renderer)
             # parse json
             operations = get_operations_from_json(raw_response)
